@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Ketamine Consultation Huntsville | Huntsville Ketamine Clinic</title>
+  <meta name="description" content="Request a free physician consultation for ketamine infusion therapy in Huntsville, AL. We'll review your history and let you know if you're a candidate.">
+  <link rel="canonical" href="https://ketamineclinichuntsville.com/contact.html">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">Huntsville <span>Ketamine Clinic</span></div>
+  <a href="tel:2565550100" class="header-phone">📞 (256) 555-0100</a>
+</header>
+<nav>
+  <a href="/">Home</a>
+  <a href="/services.html">Conditions Treated</a>
+  <a href="/faq/">FAQ</a>
+  <a href="/contact.html" class="active">Request Consultation</a>
+</nav>
+
+<section class="hero" style="padding:48px 20px 40px;">
+  <div class="hero-badge">Free Physician Consultation</div>
+  <h1>Find Out If Ketamine<br><span>Is Right for You</span></h1>
+  <p class="hero-sub">A physician will review your treatment history and let you know honestly whether you're a good candidate. No commitment required.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="form-card">
+        <h3 style="color:var(--teal-dark);font-size:1.2rem;font-weight:800;margin-bottom:24px;">Request a Consultation</h3>
+        <form id="contact-form" action="https://media.simaroa.com/api/media/leads" method="POST">
+          <div class="form-group">
+            <label for="c-name">Full Name *</label>
+            <input type="text" id="c-name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone Number *</label>
+            <input type="tel" id="c-phone" name="phone" placeholder="(256) 555-1234" required>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" name="email" placeholder="jane@email.com">
+          </div>
+          <div class="form-group">
+            <label for="c-condition">Primary Condition *</label>
+            <select id="c-condition" name="service" required>
+              <option value="">Select a condition...</option>
+              <option value="treatment-resistant-depression">Treatment-Resistant Depression</option>
+              <option value="ptsd">PTSD</option>
+              <option value="anxiety">Anxiety Disorder</option>
+              <option value="ocd">OCD</option>
+              <option value="chronic-pain">Chronic Pain / CRPS</option>
+              <option value="fibromyalgia">Fibromyalgia</option>
+              <option value="bipolar-depression">Bipolar Depression</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-history">Treatment History (optional)</label>
+            <textarea id="c-history" name="message" placeholder="Which medications have you tried? How long have you been experiencing symptoms? Any other relevant history?"></textarea>
+          </div>
+          <input type="hidden" name="site" value="huntsville-ketamine">
+          <button type="submit" class="btn-submit">Send Request →</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>What Happens Next</h3>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <strong>We call you within 1 business day</strong>
+            <span>A staff member will call to gather basic information and schedule your physician consultation.</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">👨‍⚕️</div>
+          <div>
+            <strong>Physician consultation</strong>
+            <span>A board-certified physician reviews your medical and psychiatric history to determine if you're a candidate. This can be done by phone or in person.</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📋</div>
+          <div>
+            <strong>Honest recommendation</strong>
+            <span>We'll tell you directly whether ketamine therapy is likely to help your specific situation. If you're not a good candidate, we'll say so and explain why.</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Huntsville, AL</strong>
+            <span>Serving Huntsville, Madison, Decatur, Athens, Florence and the broader Tennessee Valley area.</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <span>Monday – Friday, 8:00 AM – 5:00 PM CT</span>
+          </div>
+        </div>
+
+        <div class="disclaimer" style="margin-top:8px;">
+          <strong>Prefer to call?</strong> Reach us directly at <a href="tel:2565550100" style="color:var(--teal-dark);font-weight:700;">(256) 555-0100</a>. We typically answer during business hours.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form')
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault()
+    const btn = form.querySelector('.btn-submit')
+    btn.textContent = 'Sending...'
+    btn.disabled = true
+    try {
+      const data = Object.fromEntries(new FormData(form))
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+      })
+      if (res.ok) {
+        form.innerHTML = '<div style="text-align:center;padding:40px 20px;"><div style="font-size:2rem;margin-bottom:16px;">&#x2705;</div><h3 style="color:var(--teal-dark);font-size:1.2rem;margin-bottom:8px;">Request received.</h3><p style="color:var(--muted);font-size:.95rem;">We\'ll call you within one business day. You can also reach us at <a href="tel:2565550100" style="color:var(--gold-dark);font-weight:700;">(256) 555-0100</a>.</p></div>'
+      } else {
+        btn.textContent = 'Send Request →'
+        btn.disabled = false
+        alert('Something went wrong. Please call us at (256) 555-0100.')
+      }
+    } catch {
+      btn.textContent = 'Send Request →'
+      btn.disabled = false
+      alert('Something went wrong. Please call us at (256) 555-0100.')
+    }
+  })
+</script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-nap">
+      <h4>Huntsville Ketamine Clinic</h4>
+      <p><strong>Phone:</strong> (256) 555-0100</p>
+      <p><strong>Area:</strong> Huntsville, AL</p>
+      <p><strong>Hours:</strong> Mon–Fri 8am–5pm</p>
+    </div>
+    <div class="footer-col">
+      <h4>Conditions Treated</h4>
+      <a href="/services.html">Treatment-Resistant Depression</a>
+      <a href="/services.html">PTSD</a>
+      <a href="/services.html">Anxiety</a>
+      <a href="/services.html">Chronic Pain / CRPS</a>
+      <a href="/services.html">OCD</a>
+    </div>
+    <div class="footer-col">
+      <h4>Service Area</h4>
+      <p>Huntsville, AL</p>
+      <p>Madison, AL</p>
+      <p>Decatur, AL</p>
+      <p>Athens, AL</p>
+      <p>Florence, AL</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="/">Home</a>
+      <a href="/services.html">Conditions Treated</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/contact.html">Request Consultation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Huntsville Ketamine Clinic — Huntsville, AL</span>
+    <span>Medical Disclaimer: Not a substitute for professional medical advice.</span>
+  </div>
+</footer>
+
+</body>
+</html>
