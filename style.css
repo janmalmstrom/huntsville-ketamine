@@ -530,6 +530,10 @@ nav a:hover, nav a.active { color: var(--gold); background: rgba(255,255,255,.05
 
 .article-bottom-line p { margin: 0; font-size: .95rem; color: rgba(255,255,255,.85); }
 
+/* ── Article FAQ section (inline style override) ─────────────────────── */
+.faq-article section h3 { font-size: 1.0625rem !important; line-height: 1.6; }
+.faq-article section p { font-size: 1.0625rem !important; line-height: 1.85 !important; }
+
 /* ── FAQ Index ────────────────────────────────────────────────────────── */
 .faq-grid {
   display: grid;
