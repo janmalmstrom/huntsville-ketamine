@@ -4,7 +4,7 @@
   --teal:       #0f4c5c;
   --teal-dark:  #083544;
   --gold:       #c9a84c;
-  --gold-dark:  #a8853a;
+  --gold-dark:  #7c5a1a;
   --gray:       #f8fafc;
   --text:       #1e293b;
   --muted:      #64748b;
@@ -171,7 +171,7 @@ nav a:hover, nav a.active { color: var(--gold); background: rgba(255,255,255,.05
 }
 
 .trust-item { text-align: center; }
-.trust-item .num { font-size: 2rem; font-weight: 900; color: var(--gold); }
+.trust-item .num { font-size: 2rem; font-weight: 900; color: #fff; }
 .trust-item .label { font-size: .8rem; color: rgba(255,255,255,.6); margin-top: 2px; }
 
 /* ── Sections ─────────────────────────────────────────────────────────── */
@@ -317,7 +317,7 @@ nav a:hover, nav a.active { color: var(--gold); background: rgba(255,255,255,.05
   margin-bottom: 32px;
 }
 
-.footer-col h4 { color: var(--white); font-size: .9rem; font-weight: 700; margin-bottom: 12px; }
+.footer-col h4, .footer-col h3 { color: var(--white); font-size: .9rem; font-weight: 700; margin-bottom: 12px; }
 .footer-col p, .footer-col a { font-size: .85rem; line-height: 1.8; display: block; }
 .footer-col a:hover { color: var(--gold); }
 .footer-nap strong { color: var(--white); }
